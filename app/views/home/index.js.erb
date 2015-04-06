@@ -1,0 +1,7 @@
+$('#my-accomplishments').append('<%= j render @accomplishments %>');
+<% if @accomplishments.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @accomplishments %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>

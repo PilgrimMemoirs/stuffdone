@@ -1,12 +1,33 @@
 <section class="module parallax parallax-1">
-  <div class="container"></div>
+  <div class="container">
+	<section class="cd-intro">
+		<h1 class="cd-headline rotate-1">
+			<span>Jamie does </span>
+			<span class="cd-words-wrapper">
+				<b class="is-visible">stuff</b>
+				<b>rails</b>
+				<b>design</b>
+			</span>
+		</h1>
+	</section>
+  </div>
 </section>
 
 <section class="accomplishment">
 	<% @accomplishments.each do |a| %>
-		<div class="accomplishment">
-			<h2><%= a.title %></h2>
-			<p><%= a.desc %></p>
+		<div id="f1_container">
+		<div id="f1_card" class="shadow">
+		  <div class="front face">
+		    <h2><%= a.title %></h2>
+		  </div>
+		  <div class="back face center">
+		    <p><%= a.desc %></p>
+		  </div>
 		</div>
+		</div>	
 	<% end %>
+</section>
+
+<section class="module parallax parallax-2">
+  <div class="container"></div>
 </section>

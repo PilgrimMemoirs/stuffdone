@@ -1,0 +1,7 @@
+<div>
+  <h2><%= link_to accomplishment.title, accomplishment_path(accomplishment) %></h2>
+ 
+  <small><em><%= accomplishment.timestamp %></em></small>
+ 
+  <p><%= truncate(strip_tags(accomplishment.desc), length: 600) %></p>
+</div>

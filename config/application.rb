@@ -7,6 +7,8 @@ require 'devise'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# 
+
 module Doshit
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

@@ -3,21 +3,37 @@
   </div>
 </section>
 
-<section id="accomplishment">
-	<% @accomplishments.each do |a| %>
-		<div id="f1_container">
-		<div id="f1_card" class="shadow">
-		  <div class="front face">
-		    <h2><%= a.title %></h2>
-		  </div>
-		  <div class="back face center">
-		    <p><%= a.desc %></p>
-		  </div>
-		</div>
-		</div>	
-	<% end %>
+
+<section class="module content">
+  <div class="container">
+
+  <h2> What I've Been up to</h2>
+
+	</div>
 </section>
 
-<section class="module parallax parallax-2">
-  <div class="container"></div>
+	<section class="module parallax parallax-2" 
+	id="accomplishments">
+	  <div class="container">
+
+			<% @accomplishments.each do |a| %>
+				<article class="feat_card" >
+				    <h2><%= a.title %></h2>
+				    <p><%= truncate(a.desc, :length => 115) %></p>
+				 </article>
+			<% end %>
+
+				<article class="feat_card" >
+				    <h2>See <br> More...</h2>
+				 </article>
+    </div>
+	</section>
+
+	<section class="module content">
+  <div class="container">
+
+  <h2> What I've Been up to</h2>
+
+	</div>
 </section>
+</div>

@@ -13,6 +13,44 @@
  *= require_tree .
  *= require_self
  */
+/* ============================================================
+  NAVIGATION
+============================================================ */
+nav {
+	width: 100%;
+	height: 60px;
+	top: 0;
+	left: 0;
+	background:rgba(0,0,0,0.5);
+	z-index: 2;
+}
+
+nav ul {
+	float: right;
+	list-style: none;
+	overflow: auto;
+}
+
+nav ul li {
+    margin: 0px 15px;
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a  {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:active {
+	color: white;
+    text-decoration: underline;
+}
 
 
 /* ============================================================
@@ -37,7 +75,6 @@ footer h4{
 footer ul {
 	float: right;
 	list-style: none;
-	
 	overflow: auto;
 }
 

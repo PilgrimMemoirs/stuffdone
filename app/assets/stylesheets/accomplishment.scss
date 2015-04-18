@@ -1,3 +1,19 @@
 // Place all the styles related to the accomplishment controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#accomplishments article.feat_card {
+  background-color: white;
+  float: left;
+  min-height: 250px;
+  max-height: 251px;
+  margin: 1%;
+  opacity: 0.8;
+  padding: 2%;
+  width: 25%;
+}
+
+#accomplishments article:hover {
+  opacity: 1;
+}

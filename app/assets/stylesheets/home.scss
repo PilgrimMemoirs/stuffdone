@@ -48,10 +48,10 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("IMG_0223.JPG");
+  background-image: url("coffee.png");
 }
 section.module.parallax-2 {
-  background-image: url("IMG_0534.JPG");
+  background-image: url("work_desk_laptop.png");
   height: 620px;
 }
 section.module.parallax-3 {
@@ -85,6 +85,7 @@ section.module.parallax-3 {
   opacity: 0.8;
   padding: 2%;
   width: 25%;
+  border-radius: 5px;
 }
 
 #accomplishments article:hover {

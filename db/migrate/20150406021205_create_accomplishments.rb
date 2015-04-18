@@ -9,7 +9,7 @@ class CreateAccomplishments < ActiveRecord::Migration
 
       t.date :completed
 
-      t.referencese :user
+      t.references :user
 
       t.timestamps null: false
     end

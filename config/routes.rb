@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
   devise_for :users
-  resources :accomplishment
+  resources :accomplishment, :category
+
+  get '/about', to: 'home#about'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

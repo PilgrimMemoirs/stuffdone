@@ -5,7 +5,7 @@
 
 #accomplishments article.feat_card {
   background-color: white;
-  float: left;
+  margin: auto;
   min-height: 250px;
   max-height: 251px;
   margin: 1%;
@@ -16,4 +16,19 @@
 
 #accomplishments article:hover {
   opacity: 1;
+}
+
+
+#paginate {
+	position: absolute;
+	bottom: 50px;
+	margin: auto;
+
+}
+
+
+#paginateBlocks {
+	width: 100%;
+	display: block;
+	margin: auto;
 }

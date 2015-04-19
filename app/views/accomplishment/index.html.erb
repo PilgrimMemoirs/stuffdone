@@ -1,15 +1,18 @@
 <section class="module parallax parallax-1" id="accomplishments">
-  <div class="container">
-
+  <div class="container" id="paginate">
+  		<div id="paginateBlocks">
 			<% @accomplishments.each do |a| %>
 				<article class="feat_card">
 					<h2><%= a.title %></h2>
 					<p><%= truncate(a.desc, :length => 115) %></p>
 				</article>
 			<% end %>
-
+			</div>
+		<div id="paginateBar">
 			<%= will_paginate @accomplishments %>
-  </div>
+		</div>
+	</div>
+
 </section>
 
 

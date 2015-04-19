@@ -1,0 +1,17 @@
+Add New Task
+
+<% if current_user == User.find_by(email: "jamieleepilgrim@gmail.com")%>
+	Hi
+	<%= form_for @accomplishment do |f| %>
+		<%= f.label :title %> :
+		<%= f.text_field :title %><br>
+
+		<%= f.label :desc %> :
+		<%= f.text_field :desc %><br>
+
+		<%= f.submit %>
+	<% end %>
+
+<% else %>
+	<h2> Access Denied. </h2>
+<% end %>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
   devise_for :users
-  resources :accomplishment, :category
+  resources :accomplishments, :categories
 
   get '/about', to: 'home#about'
   
